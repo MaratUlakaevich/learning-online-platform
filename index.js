@@ -11,7 +11,7 @@ app.use(express.urlencoded({ extended: true }));
 const routes = require("./routes/auth.routes");
 app.use("/api", routes);
 
-async function main() {
+async function main () {
   await app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
   });
