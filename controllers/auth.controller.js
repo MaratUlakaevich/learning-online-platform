@@ -1,20 +1,19 @@
-const authService = require('../services/auth.service');
-
+const authService = require("../services/auth.service");
 
 class authController {
-  register(req, res, next){
+  register (req, res, next) {
     const response = authService.register(req, res, next);
-    return 1;
+    return response;
   }
 
-  login(req, res, next) {
+  login (req, res, next) {
     const response = authService.login(req, res, next);
-    return 1;
+    return response;
   }
 
-  logout(req, res, next) {
+  logout (req, res, next) {
     const response = authService.logout(req, res, next);
-    return 1;
+    return response;
   }
 }
 
